@@ -93,6 +93,13 @@ button:hover { background: #00000000; }
   button{font-size:0.9em; padding:10px 20px;} #board{grid-template-columns:repeat(3,100px);grid-template-rows:repeat(3,100px);} .cell{width:100px;height:100px;font-size:40px;}
 }
 @media (max-width:600px){#grid{grid-template-columns: repeat(3, 90px); grid-template-rows: repeat(3, 90px);} .tile{width: 90px; height: 90px;}}
+/* ❗️ Popup-Text = gleicher Style wie "Only the right words will take you further" */
+.modal-content p,
+.modal-content li {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.7em;
+  color: #ffc107;
+}
 </style>
 </head>
 <body>
@@ -102,13 +109,7 @@ button:hover { background: #00000000; }
 </div>
   <!-- Tip Button -->
 <button id="tipButton">❗️</button>
-/* Alle Hint-Texte = gleicher Font wie ❗️ */
-.modal-content,
-#wordHint,
-#chromaticText,
-#chromaticWinText {
-  font-family: 'Press Start 2P', cursive;
-}
+
 <!-- Modal für die Tipps -->
 <div id="tipModal" class="modal">
   <div class="modal-content">
