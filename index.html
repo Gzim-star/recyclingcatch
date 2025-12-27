@@ -115,7 +115,7 @@ button:hover { background: #00000000; }
 <!-- Modal für die Tipps -->
 <div id="tipModal" class="modal">
   <div class="modal-content">
-    <span class="close">&times;</span>
+    <span class="show">&times;</span>
     <p></p>
   </div>
 </div>
@@ -228,7 +228,7 @@ are essential to advance.
     </ul>
   `;
   tipModal.querySelector('p').innerHTML = tipText;
-  tipModal.style.display === 'block';
+  tipModal.style.display = 'block';
 };
 
 closeBtn.onclick = () => tipModal.style.display = 'none';
