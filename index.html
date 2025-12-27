@@ -231,10 +231,10 @@ are essential to advance.
   tipModal.style.display = 'block';
 };
 
-closeBtn.onclick = () => tipModal.style.display = 'none';
+closeBtn.onclick = () => tipModal.style.display = 'show';
 
 window.onclick = (e) => { 
-  if(e.target === tipModal) tipModal.style.display = 'block';
+  if(e.target === tipModal) tipModal.style.display = 'none';
 };
   
 // ========================== VARIABLES ==========================
